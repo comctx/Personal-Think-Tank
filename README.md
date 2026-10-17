@@ -15,7 +15,7 @@ Mac/Linux: set `OPENAI_API_KEY` in your terminal and run `./start-mac-linux.sh`.
 
 ## What is—and isn't—live on GitHub Pages
 
-GitHub Pages serves static HTML, CSS and JavaScript. It **cannot host `server.mjs`**, so visiting the public GitHub Pages site shows the clearly labeled offline guided demo. Real AI is enabled automatically only when the Node server is running locally and `/api/status` confirms it has an API key. Never paste a secret API key into a web page or commit it. To offer real AI to the public on GitHub Pages, we must later deploy an authenticated, rate-limited HTTPS backend and connect the website to it. The bundled Node server only binds to loopback and is **not** a production hosting service.
+GitHub Pages serves static HTML, CSS and JavaScript. It **cannot host `server.mjs`**, so visiting the public GitHub Pages site shows a notes-and-manual-tools experience, **not** a conversational AI. The former scripted replies have been disabled and hidden in the interface (their saved data is retained) because they were misleading users. Real AI is enabled automatically only when the Node server is running locally and `/api/status` confirms it has an API key. Never paste a secret API key into a web page or commit it. To offer real AI to the public on GitHub Pages, we must later deploy an authenticated, rate-limited HTTPS backend and connect the website to it. The bundled Node server only binds to loopback and is **not** a production hosting service.
 
 ## Conversational thinking style
 
